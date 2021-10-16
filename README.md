@@ -1,6 +1,6 @@
 # Task List - react.js
 
-## Descripton
+## Description
 
  It's a simple tool that allows you to manage your daily tasks.
 
