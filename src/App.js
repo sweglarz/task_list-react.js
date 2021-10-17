@@ -5,14 +5,16 @@ import Header from "./Header";
 import Section from "./Section";
 import Tasks from "./Tasks";
 
-const tasks = [ 
-  {id: 1, content: "przejsć na Reacta", done: false},
-  {id: 2, content: "podjąć próbę przejścia na Reacta", done: true},
-];
 
-const hideDoneTasks = false;
 
 function App() {
+  const tasks = [ 
+    {id: 1, content: "przejsć na Reacta", done: false},
+    {id: 2, content: "podjąć próbę przejścia na Reacta", done: true},
+  ];
+  
+  const hideDoneTasks = false;
+
   return (
     <div className="App">
       <Container>
@@ -23,7 +25,6 @@ function App() {
           title = "Dodaj nowe zadanie"
           body = {<Form/>}
         />
-
         <Section 
           title = "Lista zadań"
           body = {<Tasks tasks = {tasks} hideDoneTasks ={hideDoneTasks}/>}
@@ -32,6 +33,6 @@ function App() {
       </Container>
     </div>
   );
-}
+};
 
 export default App;
