@@ -1,3 +1,9 @@
+.section__list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
 .section__item {
     padding: 10px 0;
     border-bottom: 2px solid #eee;
