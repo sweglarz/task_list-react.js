@@ -4,6 +4,12 @@
     margin: 10px
 }
 
+.section__list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
 .section__header {
     margin: 0px;
     padding: 10px;
