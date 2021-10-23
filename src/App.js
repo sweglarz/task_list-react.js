@@ -9,15 +9,18 @@ import Tasks from "./Tasks";
 
 
 function App() {
-  const tasks = [ 
+  const [hideDone, setHideDone] = useState(false);
+  const [tasks, setTasks] = useState([ 
     {id: 1, content: "przejsć na Reacta", done: false},
     {id: 2, content: "podjąć próbę przejścia na Reacta", done: true},
-  ];
-  
-  const [hideDone, setHideDone] = useState(false);
+  ]);
 
   const toggleHideDone = () => {
     setHideDone (hideDone => !hideDone)
+  };
+
+  const removeTask = (id) => {
+    setTasks(tasks => tasks.filter(task => task.id !==id))
   }
 
   return (
@@ -32,7 +35,7 @@ function App() {
         />
         <Section 
           title = "Lista zadań"
-          body = {<Tasks tasks = {tasks} hideDone ={hideDone}/>}
+          body = {<Tasks tasks = {tasks} hideDone ={hideDone} removeTask={removeTask}/>}
           extraHeaderContent = {<Buttons tasks={tasks} hideDone={hideDone} toggleHideDone ={toggleHideDone}/>}
         />
       </Container>
