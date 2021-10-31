@@ -20,7 +20,7 @@ const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
                     className={`tasks__button tasks__button--remove`}
                 >🗑️</button>
             </li>
-        ))}
+        ))};
     </ul>
 );
 

@@ -6,8 +6,6 @@ import Header from "./Header";
 import Section from "./Section";
 import Tasks from "./Tasks";
 
-
-
 function App() {
   const [hideDone, setHideDone] = useState(false);
   const [tasks, setTasks] = useState([
@@ -21,7 +19,7 @@ function App() {
 
   const removeTask = (id) => {
     setTasks(tasks => tasks.filter(task => task.id !== id))
-  }
+  };
 
   const toggleTaskDone = (id) => {
     setTasks(tasks => tasks.map(task => {
@@ -41,7 +39,7 @@ function App() {
   };
 
   const addNewTask = (content) => {
-    if(content !== ""){
+    if (content !== "") {
       setTasks(tasks => [
         ...tasks,
         {
@@ -71,8 +69,8 @@ function App() {
               hideDone={hideDone}
               removeTask={removeTask}
               toggleTaskDone={toggleTaskDone} />}
-          extraHeaderContent={
-            <Buttons tasks={tasks}
+            extraHeaderContent={
+              <Buttons tasks={tasks}
               hideDone={hideDone}
               toggleHideDone={toggleHideDone}
               setAllDone={setAllDone} />}
