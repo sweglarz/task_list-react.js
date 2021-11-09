@@ -1,6 +1,6 @@
 import "./style.css";
 
-const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
+const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone}) => (
     <ul className="tasks__list">
         {tasks.map(task => (
             <li
@@ -20,7 +20,7 @@ const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
                     className={`tasks__button tasks__button--remove`}
                 >🗑️</button>
             </li>
-        ))};
+        ))}
     </ul>
 );
 
