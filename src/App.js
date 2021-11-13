@@ -7,8 +7,11 @@ import Section from "./Section";
 import Tasks from "./Tasks";
 
 function App() {
+
+  const getSavedTasks = () => JSON.parse(localStorage.getItem("tasks")) || [];
+
   const [hideDone, setHideDone] = useState(false);
-  const [tasks, setTasks] = useState(JSON.parse(localStorage.getItem("tasks")) || []);
+  const [tasks, setTasks] = useState(getSavedTasks);
 
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
