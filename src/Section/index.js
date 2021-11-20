@@ -1,13 +1,13 @@
-import "./style.css";
+import { SectionElement, HeaderBox, SectionHeader, BorderlessHeader } from "./styled";
 
 const Section = ({ title, extraHeaderContent, body }) => (
-    <section className="section">
-        <div className="section__headerBox">
-            <h2 className="section__header section__header--borderless">{title}</h2>
+    <SectionElement>
+        <HeaderBox>
+            <BorderlessHeader>{title}</BorderlessHeader>
             {extraHeaderContent}
-        </div>
+        </HeaderBox>
         {body}
-    </section>
+    </SectionElement>
 )
 
 export default Section;
