@@ -11,7 +11,7 @@
 - Flexbox,
 - Media queries,
 - ES6+,
-- BEM Methodology,
+- Styled Components,
 - React.js,
 - Create-React-App,
 - Babel,
