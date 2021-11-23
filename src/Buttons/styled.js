@@ -9,7 +9,7 @@ export const StyledButtons = styled.div`
         flex-direction: column;
         text-align: center;
     };
-`
+`;
 
 export const Button = styled.button`
     background-color: transparent;
@@ -35,4 +35,4 @@ export const Button = styled.button`
     @media(max-width: 500px){
         margin: 10px 0;
     };
-`
+`;
