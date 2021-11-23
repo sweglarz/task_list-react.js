@@ -1,13 +1,13 @@
-import { SectionElement, HeaderBox, SectionHeader, BorderlessHeader } from "./styled";
+import { SectionElement, HeaderBox, SectionHeader} from "./styled";
 
 const Section = ({ title, extraHeaderContent, body }) => (
     <SectionElement>
         <HeaderBox>
-            <BorderlessHeader>{title}</BorderlessHeader>
+            <SectionHeader>{title}</SectionHeader>
             {extraHeaderContent}
         </HeaderBox>
         {body}
     </SectionElement>
-)
+);
 
 export default Section;
