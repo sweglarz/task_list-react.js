@@ -4,7 +4,8 @@ export const List = styled.ul`
     list-style: none;
     padding: 0;
     text-align: left;
-`
+`;
+
 export const Item = styled.li`
     padding: 10px 0;
     border-bottom: 2px solid #eee;
@@ -15,16 +16,18 @@ export const Item = styled.li`
 
     ${({ hidden }) => hidden && css`
         display: none;    
-    `}
-`
+    `};
+`;
+
 export const TaskContent = styled.span`
     line-height: 1.8;
     word-break: break-all;
 
     ${({ done }) => done && css`
         text-decoration: line-through;
-    `}
-`
+    `};
+`;
+
 export const Button = styled.button`
     margin: 0 10px;
     border: none;
@@ -40,11 +43,11 @@ export const Button = styled.button`
 
         &:hover{
             background-color: rgb(0, 138, 0);
-        }
+        };
         &:active{
             background-color: rgb(3, 158, 3);
-        }
-    `}
+        };
+    `};
 
     ${({ remove }) => remove && css`
         background-color: #ff0000;
@@ -52,9 +55,9 @@ export const Button = styled.button`
 
         &:hover{
             background-color: rgb(255, 52, 52);
-        }
+        };
         &:active{
             background-color: rgb(255, 72, 72);
-        }
-    `}
-`
+        };
+    `};
+`;
