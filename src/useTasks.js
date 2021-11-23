@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 
 export const useTasks = () => {
-
     const getSavedTasks = () => JSON.parse(localStorage.getItem("tasks")) || [];
     const [tasks, setTasks] = useState(getSavedTasks);
 
@@ -43,5 +42,6 @@ export const useTasks = () => {
             ]);
         } return;
     };
+    
     return {tasks, removeTask, toggleTaskDone, setAllDone, addNewTask}
 }; 
