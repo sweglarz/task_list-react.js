@@ -8,7 +8,7 @@ export const StyledButtons = styled.div`
         display: flex;
         flex-direction: column;
         text-align: center;
-    }
+    };
 `
 
 export const Button = styled.button`
@@ -24,15 +24,15 @@ export const Button = styled.button`
 
     &:hover{
         color: rgb(1, 160, 160);
-    }
+    };
     &:active{
         color: rgb(0, 196, 196);
-    }
+    };
     &:disabled{
         color: #ccc;
         cursor: inherit;
-    }
+    };
     @media(max-width: 500px){
         margin: 10px 0;
-    }
+    };
 `
