@@ -3,7 +3,16 @@
 ## Description
 
  It's a simple tool that allows you to manage your daily tasks.
+  - You can easy add your daily tasks,
+  - have you finished the task? mark it complete by clicking the green button,
+  - do you want to delete the task? just click the red button.
 
+## Look below how it works 
+
+![Simple to-do app.](https://github.com/sweglarz/task_list-react.js/blob/main/src/image/taskslist.gif?raw=true)
+
+## Demo
+Click here to open it live -> [To do list - live version](https://sweglarz.github.io/task_list-react.js/)
 ## Technologies
 
 - HTML,
