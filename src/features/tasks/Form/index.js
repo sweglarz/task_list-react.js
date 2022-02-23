@@ -12,6 +12,7 @@ const Form = () => {
   const onFormSubmit = (event) => {
     event.preventDefault();
     if (!newTaskContent) {
+      inputRef.current.focus();
       return
     };
 
@@ -20,7 +21,7 @@ const Form = () => {
       done: false,
       id: nanoid(),
     }));
-    
+
     setNewTaskContent("");
     inputRef.current.focus();
   };
