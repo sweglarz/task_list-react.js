@@ -5,9 +5,7 @@ import Header from "../../common/Header";
 import Section from "../../common/Section";
 import TaskList from "./TaskList";
 
-
 function Tasks() {
-
   return (
     <div className="App">
       <Container>
